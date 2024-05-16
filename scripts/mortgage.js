@@ -20,9 +20,13 @@ function init (){
 }
 
 function onSubmitButtonClicked(){
-    let userEnterField1 = Number(principalLoanTextBox);
-    let userEnterField2 = Number(interestRateTextBox);
-    let userEnterField3 = Number(yearTextBox);
+    let userEnterField1 = Number(principalLoanTextBox.value);
+    let userEnterField2 = Number(interestRateTextBox.value);
+    let userEnterField3 = Number(yearTextBox.value);
+    console.log("userEnterField1, " + userEnterField1);
+    console.log("userEnterField2, " + userEnterField2);
+    console.log("userEnterField3, " + userEnterField3);
+
 
     let sum = (userEnterField1 * userEnterField2) / userEnterField3;
 
@@ -32,5 +36,5 @@ function onSubmitButtonClicked(){
 }
 
 function onResetButtonClicked(){
-    
+
 }
