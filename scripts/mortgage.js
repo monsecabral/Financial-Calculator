@@ -1,6 +1,5 @@
 "use strict";
 
-window.onload = init;
 
 // text values
 const principalLoanTextBox = document.getElementById("principalLoanTextBox");
@@ -36,5 +35,23 @@ function onSubmitButtonClicked(){
 }
 
 function onResetButtonClicked(){
+    //I want my input fields to be empty
+    principalLoanTextBox.value = "";
+    interestRateTextBox.value = "";
+    yearTextBox.value = "";
+    outputTextBox.value = "";
 
+    // let userEnterField1 = principalLoanTextBox;
+    // let userEnterField2 = interestRateTextBox;
+    // let userEnterField3 = yearTextBox;
+    // console.log("" + userEnterField1);
+    // console.log("" + userEnterField2);
+    // console.log("" + userEnterField3);
+
+
+    // //Hide the output
+    // userEnterField1.value = "";
+    // userEnterField2.value = "";
+    // userEnterField3.value = "";
+    // outputTextBox.value = "";
 }
